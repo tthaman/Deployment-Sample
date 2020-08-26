@@ -3,6 +3,7 @@ const router = Router();
 
 router.use("/items", require('./items'));
 router.get("/", (req, res, next) => {
+  console.log('help');
   res.send(`
     <html>
       <body>
